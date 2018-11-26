@@ -7,7 +7,6 @@
 " ==============================================================================
 call plug#begin()
 Plug 'yegappan/mru'
-" Plug 'vim-syntastic/syntastic'
 Plug 'w0rp/ale'
 Plug 'nvie/vim-flake8'
 Plug 'airblade/vim-gitgutter'
