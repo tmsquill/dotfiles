@@ -141,3 +141,9 @@ if has('gui_running')
 else
   colorscheme zenburn
 endif
+
+" ==============================================================================
+" Auto Completion (Command) 
+" ==============================================================================
+
+set wildmode=longest,list,full
