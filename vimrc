@@ -6,10 +6,15 @@
 " Plugin manager is vim-plug for simplicity.
 " ==============================================================================
 call plug#begin()
-Plug 'yegappan/mru'
+
+" Linting
 Plug 'w0rp/ale'
 Plug 'nvie/vim-flake8'
+
+" Git
 Plug 'airblade/vim-gitgutter'
+
+" Just Vim Stuff
 Plug 'itchyny/lightline.vim'
 Plug 'townk/vim-autoclose'
 Plug 'tmhedberg/SimpylFold'
@@ -17,10 +22,16 @@ Plug 'vim-scripts/indentpython.vim'
 Plug 'tpope/vim-surround'
 Plug 'jnurmine/Zenburn'
 Plug 'altercation/vim-colors-solarized'
+
+" Commenting
 Plug 'scrooloose/nerdcommenter'
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+
+" File Search
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'yegappan/mru'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+
 call plug#end()
 
 " ==============================================================================
