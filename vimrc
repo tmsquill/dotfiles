@@ -11,6 +11,7 @@ call plug#begin()
 " Linting
 Plug 'w0rp/ale'
 Plug 'nvie/vim-flake8'
+Plug 'cespare/vim-toml'
 
 " Git
 Plug 'airblade/vim-gitgutter'
