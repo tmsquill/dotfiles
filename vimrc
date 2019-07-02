@@ -24,6 +24,7 @@ Plug 'vim-scripts/indentpython.vim'
 Plug 'tpope/vim-surround'
 Plug 'jnurmine/Zenburn'
 Plug 'altercation/vim-colors-solarized'
+Plug 'mattn/emmet-vim'
 
 " Commenting
 Plug 'scrooloose/nerdcommenter'
