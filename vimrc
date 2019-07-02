@@ -17,7 +17,8 @@ Plug 'cespare/vim-toml'
 Plug 'airblade/vim-gitgutter'
 
 " Just Vim Stuff
-Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'townk/vim-autoclose'
 Plug 'tmhedberg/SimpylFold'
 Plug 'vim-scripts/indentpython.vim'
