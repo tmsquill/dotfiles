@@ -10,13 +10,16 @@ call plug#begin()
 
 " Linting
 Plug 'w0rp/ale'
-Plug 'nvie/vim-flake8'
-Plug 'cespare/vim-toml'
+Plug 'nvie/vim-flake8', { 'for': 'python' }
+Plug 'cespare/vim-toml', { 'for': 'toml' }
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
 
 " Git
 Plug 'airblade/vim-gitgutter'
 
 " Just Vim Stuff
+Plug 'tpope/vim-unimpaired'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'townk/vim-autoclose'
