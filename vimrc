@@ -105,68 +105,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 nnoremap <F4> :NERDTreeToggle<CR>
 let NERDTreeIgnore=['\.pyc$', '\~$']
 
-
-" Other
-" ==============================================================================
-
-" Code Folding
-set foldmethod=indent
-set foldlevel=99
-
-" Remap the spacebar to toggle folding code.
-nnoremap <space> za
-
-" PEP 8 Indentation
-au BufNewFile,BufRead *.py
-    \ set tabstop=4 |
-    \ set softtabstop=4 |
-    \ set shiftwidth=4 |
-    \ set textwidth=79 |
-    \ set expandtab |
-    \ set autoindent |
-    \ set fileformat=unix |
-
-" Haskell Indentation
-au BufNewFile,BufRead *.hs
-    \ set tabstop=2 |
-    \ set softtabstop=2 |
-    \ set shiftwidth=2 |
-    \ set textwidth=79 |
-    \ set expandtab |
-    \ set autoindent |
-    \ set fileformat=unix |
-
-" Web Development Indentation
-au BufNewFile,BufRead *.js,*.html,*.css
-    \ set tabstop=2 |
-    \ set softtabstop=2 |
-    \ set shiftwidth=2 |
-
-" Syntax Highlighting
-let python_highlight_all=1
-syntax on
-
-" UTF-8 Support
-set encoding=utf-8
-
-" Enable line numbering.
-set nu
-
-" Context lines above and below the cursor.
-set scrolloff=5
-
-" Remove trailing whitespace on save.
-autocmd BufWritePre * :%s/\s\+$//e
-
-" Flag Unnecessary Whitespace
-highlight BadWhitespace ctermbg=red guibg=darkred
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
-
-" Auto Completion (Command)
-set wildmode=longest,list,full
-autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
-
-
 " (Plugin) Coc
 " ==============================================================================
 
@@ -295,3 +233,65 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+
+
+
+" Other
+" ==============================================================================
+
+" Code Folding
+set foldmethod=indent
+set foldlevel=99
+
+" Remap the spacebar to toggle folding code.
+nnoremap <space> za
+
+" PEP 8 Indentation
+au BufNewFile,BufRead *.py
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix |
+
+" Haskell Indentation
+au BufNewFile,BufRead *.hs
+    \ set tabstop=2 |
+    \ set softtabstop=2 |
+    \ set shiftwidth=2 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix |
+
+" Web Development Indentation
+au BufNewFile,BufRead *.js,*.html,*.css
+    \ set tabstop=2 |
+    \ set softtabstop=2 |
+    \ set shiftwidth=2 |
+
+" Syntax Highlighting
+let python_highlight_all=1
+syntax on
+
+" UTF-8 Support
+set encoding=utf-8
+
+" Enable line numbering.
+set nu
+
+" Context lines above and below the cursor.
+set scrolloff=5
+
+" Remove trailing whitespace on save.
+autocmd BufWritePre * :%s/\s\+$//e
+
+" Flag Unnecessary Whitespace
+highlight BadWhitespace ctermbg=red guibg=darkred
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+
+" Auto Completion (Command)
+set wildmode=longest,list,full
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
