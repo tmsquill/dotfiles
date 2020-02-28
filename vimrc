@@ -52,7 +52,7 @@ Plug 'airblade/vim-gitgutter'
 " ==============================================================================
 
 " General-purpose fuzzy finder.
-Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf', { 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 
 " Most Recently Used (MRU) files.
@@ -295,3 +295,4 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 " Auto Completion (Command)
 set wildmode=longest,list,full
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+

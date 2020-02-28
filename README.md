@@ -1,3 +1,4 @@
-This repository contains my personalized dotfiles! Here's a high-level summary:
+This repository contains my personalized dotfiles!
 
-- vimrc (Uses vim-plug, focused on Python & Web Development)
+- vimrc (comprehensive, assumed _some_ external dependencies)
+- vimrc.min (no external dependencies requires, lighter-weight)
