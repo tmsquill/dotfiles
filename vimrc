@@ -296,3 +296,8 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 set wildmode=longest,list,full
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
+" Return to last edit position when opening files.
+autocmd BufReadPost *
+     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+     \   exe "normal! g`\"" |
+     \ endif
