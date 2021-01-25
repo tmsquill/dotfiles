@@ -2,12 +2,6 @@
 
 call plug#begin()
 
-" Language Support
-" ==============================================================================
-
-" Syntax highlighting support for TOML.
-Plug 'cespare/vim-toml', { 'for': 'toml' }
-
 " Editor Actions & Shortcuts
 " ==============================================================================
 
