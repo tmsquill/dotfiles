@@ -1,6 +1,5 @@
 #!/bin/bash
 
-sudo apt install -y neovim
 mkdir -p $HOME/.config/nvim
 touch $HOME/.config/nvim/init.vim
 echo "set runtimepath^=~/.vim runtimepath+=~/.vim/after" >> $HOME/.config/nvim/init.vim
