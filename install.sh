@@ -1,8 +1,10 @@
 #!/bin/bash
 
-mkdir -p $HOME/.config/nvim
-touch $HOME/.config/nvim/init.vim
-echo "set runtimepath^=~/.vim runtimepath+=~/.vim/after" >> $HOME/.config/nvim/init.vim
-echo "let &packpath = &runtimepath" >> $HOME/.config/nvim/init.vim
-echo "source ~/.vimrc" >> $HOME/.config/nvim/init.vim
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+# Create the $XDG_CONFIG_HOME directory.
+mkdir -p $HOME/.config
+
+# Create symbolic links from the $XDG_CONFIG_HOME directory to this repository.
+CONFIG_DIR=$( dirname -- "$( readlink -f -- "$0"; )"; );
+ln -s $CONFIG_DIR/config/alacritty $HOME/.config/alacritty
+ln -s $CONFIG_DIR/config/nvim $HOME/.config/nvim
+ln -s $CONFIG_DIR/config/tmux $HOME/.config/tmux
