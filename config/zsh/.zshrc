@@ -9,7 +9,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/Zivia/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -128,7 +128,7 @@ export KUBE_EDITOR=nvim
 alias k="kubectl"
 
 # =============================================================================
-# FZF
+# fzf
 # =============================================================================
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -141,7 +141,6 @@ alias cd="z"
 function zle_zi {
     eval zi
     eval :
-    #zle redisplay
 }
 
 zle -N zle_zi; bindkey "^E" zle_zi
