@@ -2,7 +2,9 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
+tap "cjbassi/gotop"
 brew "fzf"
+brew "gotop"
 brew "helm"
 brew "htop"
 brew "icdiff"
@@ -20,6 +22,3 @@ brew "tree"
 brew "watch"
 brew "zoxide"
 cask "alacritty"
-mas "Amphetamine", id: 937984704
-mas "Magnet", id: 441258766
-

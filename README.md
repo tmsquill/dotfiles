@@ -6,8 +6,6 @@ A collection of configuration files for my terminal environments.
 
 Download and install the MelsoLG font from [NerdFonts](https://www.nerdfonts.com/font-downloads).
 
-Create `.zshenv` in the `$HOME` directory with the following contents.
-
 ```
 # Directory containing zshrc file.
 export ZDOTDIR=$HOME/.config/zsh
