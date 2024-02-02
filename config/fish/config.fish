@@ -13,3 +13,6 @@ alias ls="eza -l"
 
 # Starship
 starship init fish | source
+
+# FZF Key Bindings
+fzf_configure_bindings --processes=\ce

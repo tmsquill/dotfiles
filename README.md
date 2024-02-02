@@ -26,3 +26,7 @@ cd dotfiles
 - [tmux](https://github.com/tmux/tmux)
 - [neovim](https://github.com/neovim/neovim)
 - [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
+
+## TPM
+
+Use `prefix-I` to install plugins and `prefix-U` to update them.
