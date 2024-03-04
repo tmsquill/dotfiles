@@ -24,3 +24,4 @@ style = "Regular"
 
 [shell]
 program = "/opt/homebrew/bin/fish"
+args = ["-l", "-c", "tmux attach || tmux"]
