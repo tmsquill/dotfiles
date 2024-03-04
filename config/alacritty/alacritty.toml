@@ -22,6 +22,9 @@ style = "Italic"
 family = "MesloLGL Nerd Font"
 style = "Regular"
 
+[scrolling]
+history = 50000
+
 [shell]
 program = "/opt/homebrew/bin/fish"
 args = ["-l", "-c", "tmux attach || tmux"]
