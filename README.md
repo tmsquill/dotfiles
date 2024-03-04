@@ -1,18 +1,15 @@
 # Dotfiles
 
-A collection of configuration files for my terminal environments.
+My preferred terminal environment, which consists of:
+
+- [alacritty](https://github.com/alacritty/alacritty)
+- [fish](https://github.com/fish-shell/fish-shell)
+- [neovim](https://github.com/neovim/neovim)
+- [tmux](https://github.com/tmux/tmux)
 
 ## Installation
 
 Download and install the MelsoLG font from [NerdFonts](https://www.nerdfonts.com/font-downloads).
-
-```
-# Directory containing zshrc file.
-export ZDOTDIR=$HOME/.config/zsh
-
-# Configuration specifically for this computer.
-# export PATH=$PATH:...
-```
 
 ```bash
 git clone https://github.com/tmsquill/dotfiles.git
@@ -20,13 +17,6 @@ cd dotfiles
 ./install.sh
 ```
 
-## Tools
-
-- [alacritty](https://github.com/alacritty/alacritty)
-- [tmux](https://github.com/tmux/tmux)
-- [neovim](https://github.com/neovim/neovim)
-- [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
-
-## TPM
+## Tmux Package Manager (TPM)
 
 Use `prefix-I` to install plugins and `prefix-U` to update them.
