@@ -7,14 +7,32 @@ My preferred terminal environment, which consists of:
 - [neovim](https://github.com/neovim/neovim)
 - [tmux](https://github.com/tmux/tmux)
 
-## Installation
+I find [NerdFonts](https://www.nerdfonts.com/font-downloads) (specifically MelsoLG) satisfying to use, the Alacritty configutation assumes it to be present.
 
-Download and install the MelsoLG font from [NerdFonts](https://www.nerdfonts.com/font-downloads).
+Exact installation steps will vary depending on the operating system, but I mainly use macOS, so Homebrew dependencies are provided. Once installed, run the following:
 
-```bash
-git clone https://github.com/tmsquill/dotfiles.git
-cd dotfiles
-./install.sh
+```sh
+# Clone this repository.
+git clone --recurse-submodules https://github.com/tmsquill/dotfiles.github
+
+# (macOS Only) Install useful key bindings and fuzzy completion.
+$(brew --prefix)/opt/fzf/install
+
+# Clone the Tmux Plugin Manager.
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# Create the $XDG_CONFIG_HOME directory.
+mkdir -p $HOME/.config
+  
+# Create symbolic links from the $XDG_CONFIG_HOME directory to this repository.
+CONFIG_DIR=$( dirname -- "$( readlink -f -- "$0"; )"; );
+ln -s $CONFIG_DIR/config/alacritty $HOME/.config/alacritty
+ln -s $CONFIG_DIR/config/fish $HOME/.config/fish
+ln -s $CONFIG_DIR/config/nvim $HOME/.config/nvim
+ln -s $CONFIG_DIR/config/tmux $HOME/.config/tmux
+
+# Change the default shell to fish.
+chsh -s `which fish`
 ```
 
 ## Tmux Package Manager (TPM)
