@@ -5,6 +5,7 @@ My preferred terminal environment, which consists of:
 - [alacritty](https://github.com/alacritty/alacritty)
 - [fish](https://github.com/fish-shell/fish-shell)
 - [neovim](https://github.com/neovim/neovim)
+- [starship](https://github.com/starship/starship)
 - [tmux](https://github.com/tmux/tmux)
 
 I find [NerdFonts](https://www.nerdfonts.com/font-downloads) (specifically MelsoLG) satisfying to use, the Alacritty configutation assumes it to be present.

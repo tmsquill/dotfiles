@@ -9,10 +9,24 @@ set fish_greeting
 
 # Aliases
 alias k="kubectl"
-alias ls="eza -l"
 
-# Starship
-starship init fish | source
+# Check for "eza", if present then set alias.
+if type -q eza
+    alias ls="eza -l"
+else
+    echo "eza is not installed!"
+end
 
-# FZF Key Bindings
-fzf_configure_bindings --processes=\ce
+# Check for "starship", if present then initialize.
+if type -q starship
+    starship init fish | source
+else
+    echo "starship is not installed!"
+end
+
+# Check for "fzf_configure_bindings", if present then configure bindings.
+if type -q fzf_configure_bindings
+    fzf_configure_bindings --processes=\ce
+else
+    echo "fzf is not installed!"
+end
