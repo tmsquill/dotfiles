@@ -24,4 +24,4 @@ _Consists of..._
 1. Ensure you have [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) installed.
 2. Copy the `example.inventory.yml` inventory file to `inventory.yml`. Ensure it has at least one group/host configured.
 3. Modify the variables at the top of the playbooks to your liking.
-4. Run the playbooks in order (can be done manually or by running `ansible-playbook playbooks/site.yml`)
+4. Run the playbooks in order (can be done manually or by running `ansible-playbook playbooks/main.yml`)
