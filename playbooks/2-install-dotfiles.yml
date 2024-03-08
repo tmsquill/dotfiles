@@ -1,0 +1,54 @@
+---
+- name: Install Dotfiles
+  hosts: all
+  vars:
+    dotfiles_install_path: ~/dotfiles
+  tasks:
+
+    - name: Create Fish Shell Configuration Directory
+      file:
+        path: "{{ dotfiles_install_path }}/config/fish"
+        state: directory
+
+    - name: Copy - Fish Shell Configuration
+      copy:
+        src: "{{ inventory_dir }}/config/fish/config.fish"
+        dest: "{{ dotfiles_install_path }}/config/fish/config.fish"
+
+    - name: Create Symbolic Link - Fish Shell Configuration
+      file:
+        src: "{{ dotfiles_install_path }}/config/fish"
+        path: "~/.config/fish"
+        state: link
+
+    - name: Create Starship Configuration Directory
+      file:
+        path: "{{ dotfiles_install_path }}/config/starship"
+        state: directory
+
+    - name: Copy - Starship Configuration
+      copy:
+        src: "{{ inventory_dir }}/config/starship/starship.toml"
+        dest: "{{ dotfiles_install_path }}/config/starship/starship.toml"
+
+    - name: Create Symbolic Link - Starship Configuration
+      file:
+        src: "{{ dotfiles_install_path }}/config/starship/starship.toml"
+        path: "~/.config/starship.toml"
+        state: link
+
+    - name: Create Tmux Configuration Directory
+      file:
+        path: "{{ dotfiles_install_path }}/config/tmux"
+        state: directory
+
+    - name: Copy - Tmux Configuration
+      copy:
+        src: "{{ inventory_dir }}/config/tmux/tmux.conf"
+        dest: "{{ dotfiles_install_path }}/config/tmux/tmux.conf"
+
+    - name: Create Symbolic Link - Tmux Configuration
+      file:
+        src: "{{ dotfiles_install_path }}/config/tmux"
+        path: "~/.config/tmux"
+        state: link

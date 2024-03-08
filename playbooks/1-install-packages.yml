@@ -1,0 +1,32 @@
+---
+- name: Install Packages
+  hosts: all
+  become: yes
+  tasks:
+
+    - name: Add Fish Shell Repository Key
+      apt_key:
+        url: https://download.opensuse.org/repositories/shells:fish:release:3/Debian_10/Release.key
+        state: present
+
+    - name: Add Fish Shell Repository
+      apt_repository:
+        repo: "deb http://download.opensuse.org/repositories/shells:/fish:/release:/3/Debian_10/ /"
+        state: present
+        filename: shells-fish-release-3
+
+    - name: Update Package Cache & Install Packages
+      apt:
+        name:
+          - fish
+          - fzf
+          - git
+          - neovim
+          - tmux
+        update_cache: yes
+
+    - name: Upgrade Packages
+      apt: 
+        upgrade: yes
+        autoremove: yes
+        autoclean: yes

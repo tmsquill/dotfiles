@@ -1,0 +1,28 @@
+---
+- name: Install Nerd Fonts
+  hosts: all
+  vars:
+    nerd_fonts_url: https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Meslo.tar.xz
+    nerd_fonts_dir: ~/.fonts
+  tasks:
+
+    - name: Create User Fonts Directory
+      file:
+        path: "{{ nerd_fonts_dir }}"
+        state: directory
+  
+    - name: Download Nerd Fonts Tarball
+      get_url:
+        url: "{{ nerd_fonts_url }}"
+        dest: "/tmp/nerd-fonts.tar.xz"
+  
+    - name: Extract Nerd Fonts Files
+      unarchive:
+        src: "/tmp/nerd-fonts.tar.xz"
+        dest: "{{ nerd_fonts_dir }}"
+        remote_src: yes
+  
+    - name: Cleanup Nerd Fonts Tarball
+      file:
+        path: "/tmp/nerd-fonts.tar.xz"
+        state: absent

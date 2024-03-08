@@ -1,0 +1,46 @@
+---
+- name: Install Fish Shell
+  hosts: all
+  vars:
+    ansible_user: tmsquill
+  tasks:
+
+    - name: Get Fish Shell Binary Path
+      command: which fish
+      register: fish_path
+      failed_when: fish_path.rc != 0
+      changed_when: false
+
+    - name: Change Default Shell to Fish Shell
+      become: yes
+      user:
+        name: "{{ ansible_user }}"
+        shell: "{{ fish_path.stdout }}"
+      when: fish_path.stdout != ""
+
+    - name: Download Fisher Installer
+      get_url:
+        url: https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish
+        dest: /tmp/fisher.fish
+        mode: 0755
+
+    - name: Install Fisher
+      shell: source /tmp/fisher.fish && fisher install jorgebucaran/fisher
+      args:
+        executable: "{{ fish_path.stdout }}"
+
+    - name: Cleanup Fisher Installer
+      file:
+        path: /tmp/fisher.fish
+        state: absent
+
+    - name: Install fzf.fish
+      shell: fisher install PatrickF1/fzf.fish
+      args:
+        executable: "{{ fish_path.stdout }}"
+
+    - name: Create Fish User Key Bindings File
+      lineinfile:
+        path: "~/.config/fish/functions/fish_user_key_bindings.fish"
+        line: "fzf_key_bindings"
+        create: yes

@@ -1,0 +1,23 @@
+---
+- name: Install Starship
+  hosts: all
+  become: yes
+  tasks:
+  
+    - name: Download Starship Installer
+      get_url:
+        url: https://starship.rs/install.sh
+        dest: /tmp/starship-install.sh
+        mode: 0755
+
+    - name: Install Starship
+      shell: /tmp/starship-install.sh --yes
+      args:
+        executable: /bin/bash
+      environment:
+        STARSHIP_DIST: "{{ ansible_distribution | lower }}"
+
+    - name: Cleanup Starship Installer
+      file:
+        path: /tmp/starship-install.sh
+        state: absent

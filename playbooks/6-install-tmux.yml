@@ -1,0 +1,15 @@
+---
+- name: Install Tmux
+  hosts: all
+  tasks:
+  
+    - name: Install TPM (Tmux Package Manager)
+      git:
+        repo: https://github.com/tmux-plugins/tpm.git
+        dest: "~/.tmux/plugins/tpm"
+        clone: yes
+
+    - name: Install Plugins
+      shell: source ~/.tmux/plugins/tpm/bin/install_plugins
+      args:
+        executable: /bin/bash

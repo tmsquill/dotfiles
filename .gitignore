@@ -3,3 +3,4 @@ config/fish/**
 config/tmux/**
 !/config/tmux/tmux.conf
 Brewfile.lock.json
+inventory.ini
