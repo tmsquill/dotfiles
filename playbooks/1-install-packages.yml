@@ -4,6 +4,24 @@
   become: yes
   tasks:
 
+    - name: Create Keyrings Directory
+      file:
+        path: /etc/apt/keyrings
+        state: directory
+        mode: 0755
+
+    - name: Add EZA Repository Key
+      apt_key:
+        url: https://raw.githubusercontent.com/eza-community/eza/main/deb.asc
+        state: present
+        keyring: /etc/apt/keyrings/gierens.gpg
+
+    - name: Add EZA Repository
+      apt_repository:
+        repo: "deb [signed-by=/etc/apt/keyrings/gierens.gpg] http://deb.gierens.de stable main"
+        state: present
+        filename: gierens
+
     - name: Add Fish Shell Repository Key
       apt_key:
         url: https://download.opensuse.org/repositories/shells:fish:release:3/Debian_10/Release.key
@@ -18,6 +36,7 @@
     - name: Update Package Cache & Install Packages
       apt:
         name:
+          - eza
           - fish
           - fzf
           - git
