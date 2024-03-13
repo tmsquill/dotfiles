@@ -11,6 +11,7 @@ _Consists of..._
 - [fzf](https://github.com/junegunn/fzf)
 - [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
 - [neovim](https://github.com/neovim/neovim)
+    - [lazyvim](https://github.com/LazyVim/LazyVim)
 - [starship](https://github.com/starship/starship)
 - [tmux](https://github.com/tmux/tmux)
     - [tpm](https://github.com/tmux-plugins/tpm)
