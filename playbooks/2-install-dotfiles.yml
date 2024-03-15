@@ -21,6 +21,17 @@
         path: "~/.config/fish"
         state: link
 
+    - name: Copy - Neovim Configuration
+      copy:
+        src: "{{ inventory_dir }}/config/nvim"
+        dest: "{{ dotfiles_install_path }}/config"
+
+    - name: Create Symbolic Link - Neovim Configuration
+      file:
+        src: "{{ dotfiles_install_path }}/config/nvim"
+        path: "~/.config/nvim"
+        state: link
+
     - name: Create Starship Configuration Directory
       file:
         path: "{{ dotfiles_install_path }}/config/starship"
