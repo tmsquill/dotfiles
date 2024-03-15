@@ -15,6 +15,7 @@ _Consists of..._
 - [starship](https://github.com/starship/starship)
 - [tmux](https://github.com/tmux/tmux)
     - [tpm](https://github.com/tmux-plugins/tpm)
+    - [catppuccin](https://github.com/catppuccin/tmux)
     - [tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)
     - [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
 
