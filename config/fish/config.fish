@@ -30,3 +30,11 @@ if type -q fzf_configure_bindings
 else
     echo "fzf is not installed!"
 end
+
+# Check for "devbox", if present then configure bindings.
+if type -q devbox
+    eval "$(devbox global shellenv)"
+else
+    echo "devbox is not installed!"
+end
+
