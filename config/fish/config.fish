@@ -2,7 +2,7 @@
 set -gx EDITOR nvim
 
 # Update $PATH Variable
-set PATH /opt/homebrew/bin $HOME/.istioctl/bin $PATH
+set PATH /opt/homebrew/bin $HOME/.local/share/devbox/global/default/.devbox/nix/profile/default/bin $PATH
 
 # Disable Greeting Message
 set fish_greeting
@@ -33,8 +33,7 @@ end
 
 # Check for "devbox", if present then configure bindings.
 if type -q devbox
-    eval "$(devbox global shellenv)"
+    devbox global shellenv --init-hook | source
 else
     echo "devbox is not installed!"
 end
-
