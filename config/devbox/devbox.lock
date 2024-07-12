@@ -161,6 +161,54 @@
         }
       }
     },
+    "cilium-cli@latest": {
+      "last_modified": "2024-07-07T16:08:25Z",
+      "resolved": "github:NixOS/nixpkgs/ab82a9612aa45284d4adf69ee81871a389669a9e#cilium-cli",
+      "source": "devbox-search",
+      "version": "0.16.11",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/yjp9vx8whb92gkgbhdn0avrf6zc20fz8-cilium-cli-0.16.11",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/yjp9vx8whb92gkgbhdn0avrf6zc20fz8-cilium-cli-0.16.11"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/xpvz2ibchbiqqb65w59sx4bv8zdsdd2s-cilium-cli-0.16.11",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/xpvz2ibchbiqqb65w59sx4bv8zdsdd2s-cilium-cli-0.16.11"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/3x8pfsjlybiz7r4qpbxrsff8rivzxprp-cilium-cli-0.16.11",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/3x8pfsjlybiz7r4qpbxrsff8rivzxprp-cilium-cli-0.16.11"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/mn6dz5sy1sxfsdr4plrsfj706cdzf545-cilium-cli-0.16.11",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/mn6dz5sy1sxfsdr4plrsfj706cdzf545-cilium-cli-0.16.11"
+        }
+      }
+    },
     "eza@latest": {
       "last_modified": "2024-07-07T16:08:25Z",
       "resolved": "github:NixOS/nixpkgs/ab82a9612aa45284d4adf69ee81871a389669a9e#eza",
@@ -438,6 +486,54 @@
             }
           ],
           "store_path": "/nix/store/mv6jw63cfnnhg2pbl8jkap9hmn8krnkd-htop-3.3.0"
+        }
+      }
+    },
+    "hubble@latest": {
+      "last_modified": "2024-07-07T16:08:25Z",
+      "resolved": "github:NixOS/nixpkgs/ab82a9612aa45284d4adf69ee81871a389669a9e#hubble",
+      "source": "devbox-search",
+      "version": "0.13.5",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/kpv3ij58iwq93fkrz082k7id8lhn68ph-hubble-0.13.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/kpv3ij58iwq93fkrz082k7id8lhn68ph-hubble-0.13.5"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/yjfwd7igjfc6xkv9h2hxfgxs2wb5mz9b-hubble-0.13.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/yjfwd7igjfc6xkv9h2hxfgxs2wb5mz9b-hubble-0.13.5"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/7mzscfgv0xgji8hgcsqhz24cd39gm2hf-hubble-0.13.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/7mzscfgv0xgji8hgcsqhz24cd39gm2hf-hubble-0.13.5"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/f9dl86vl8fa0ayg2zwjsg4izhmqrqrhg-hubble-0.13.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/f9dl86vl8fa0ayg2zwjsg4izhmqrqrhg-hubble-0.13.5"
         }
       }
     },
@@ -1221,112 +1317,140 @@
         }
       }
     },
-    "postgresql@latest": {
+    "postgresql_16@latest": {
       "last_modified": "2024-07-07T16:08:25Z",
       "plugin_version": "0.0.2",
-      "resolved": "github:NixOS/nixpkgs/ab82a9612aa45284d4adf69ee81871a389669a9e#postgresql",
+      "resolved": "github:NixOS/nixpkgs/ab82a9612aa45284d4adf69ee81871a389669a9e#postgresql_16",
       "source": "devbox-search",
-      "version": "15.7",
+      "version": "16.3",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/g709813dxhgyjwsz4zwqyqb2fxvz9n1l-postgresql-15.7",
+              "path": "/nix/store/svz7jy8ha79nnpg8c0vkwjr9z56823dz-postgresql-16.3",
               "default": true
             },
             {
               "name": "man",
-              "path": "/nix/store/yww09ykk70wjm4ay43yh350zd77i3522-postgresql-15.7-man",
+              "path": "/nix/store/gkssvfd9s2443390jfd2zbgbr9rsnyl4-postgresql-16.3-man",
               "default": true
             },
             {
               "name": "doc",
-              "path": "/nix/store/4mdg50lfjh1dancf2w9aqjl3fjg1w5wv-postgresql-15.7-doc"
+              "path": "/nix/store/6b1gz4k1jpk68ckxvyqi0y4jgq9l7iqi-postgresql-16.3-doc"
             },
             {
               "name": "lib",
-              "path": "/nix/store/7hmvsyvcqrr46v5440c5k137qc4vwz73-postgresql-15.7-lib"
+              "path": "/nix/store/chy58r9swk745q8840g8d768fh3w0d0y-postgresql-16.3-lib"
             }
           ],
-          "store_path": "/nix/store/g709813dxhgyjwsz4zwqyqb2fxvz9n1l-postgresql-15.7"
+          "store_path": "/nix/store/svz7jy8ha79nnpg8c0vkwjr9z56823dz-postgresql-16.3"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/ggj83wgyjarkcxn99igsband7rq4bnaq-postgresql-15.7",
+              "path": "/nix/store/9irkfbgp80svx0niw9gbvnw0iq0xrxkc-postgresql-16.3",
               "default": true
             },
             {
               "name": "man",
-              "path": "/nix/store/ri1fbcw75xj3zp5yp8dknxw484b7fzp5-postgresql-15.7-man",
+              "path": "/nix/store/jflwv0znil706zkczp521gv7gf51fcs0-postgresql-16.3-man",
               "default": true
             },
             {
+              "name": "doc",
+              "path": "/nix/store/fhxicn1xzadv2j9jimva30b074kygs6g-postgresql-16.3-doc"
+            },
+            {
               "name": "lib",
-              "path": "/nix/store/zir7zh3j79fd80zwxkcn6y29aps437dc-postgresql-15.7-lib"
+              "path": "/nix/store/iya8p9af1r5y4d7zxkgv774cdyacsq0g-postgresql-16.3-lib"
             },
             {
               "name": "debug",
-              "path": "/nix/store/z2cnvgq78rallhc03p8wy9zdqq7fpsr2-postgresql-15.7-debug"
-            },
-            {
-              "name": "doc",
-              "path": "/nix/store/naz9z3jj54lad70lkq8zkwdk59m3vm52-postgresql-15.7-doc"
+              "path": "/nix/store/vkc7ydy3z1251fyh7r3kifd6rl7ss87d-postgresql-16.3-debug"
             }
           ],
-          "store_path": "/nix/store/ggj83wgyjarkcxn99igsband7rq4bnaq-postgresql-15.7"
+          "store_path": "/nix/store/9irkfbgp80svx0niw9gbvnw0iq0xrxkc-postgresql-16.3"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/qvhjnll3n3d1va7rxlh1yd348gqwy4v1-postgresql-15.7",
+              "path": "/nix/store/hqhclsx0g76a73gw5shig2y92nr448d3-postgresql-16.3",
               "default": true
             },
             {
               "name": "man",
-              "path": "/nix/store/5mmzk97ppd9b6m2239b4xkwc853116mf-postgresql-15.7-man",
+              "path": "/nix/store/2w13krfgajr7pk0v2hn8nc8k48xlqk91-postgresql-16.3-man",
               "default": true
             },
             {
               "name": "doc",
-              "path": "/nix/store/jwp1aqs6fkbygfg9gpcx99lhc2dlalgc-postgresql-15.7-doc"
+              "path": "/nix/store/f62n0v1ccdlzabi1akfrdnwwfijr3m7h-postgresql-16.3-doc"
             },
             {
               "name": "lib",
-              "path": "/nix/store/sngcqjdypd1bwxz6rs3hwy8jbjb9k690-postgresql-15.7-lib"
+              "path": "/nix/store/0c3cj6cvwidlwx9k5zijw4wbw4y4l11d-postgresql-16.3-lib"
             }
           ],
-          "store_path": "/nix/store/qvhjnll3n3d1va7rxlh1yd348gqwy4v1-postgresql-15.7"
+          "store_path": "/nix/store/hqhclsx0g76a73gw5shig2y92nr448d3-postgresql-16.3"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/y20f3ng0g3qyvxdnrh6pj05a9gg1vhzc-postgresql-15.7",
+              "path": "/nix/store/hpgi211gzb0cp9m78pnga6lyrzb8v50b-postgresql-16.3",
               "default": true
             },
             {
               "name": "man",
-              "path": "/nix/store/i2dxiiwv6a38azq2bacb4mk7ir4bsxk6-postgresql-15.7-man",
+              "path": "/nix/store/bd96p5ngl4izf0b2dvan1sdn8zp278g4-postgresql-16.3-man",
               "default": true
             },
             {
+              "name": "lib",
+              "path": "/nix/store/7gxl1g2gxsq8af956bicpxb3zs48a50i-postgresql-16.3-lib"
+            },
+            {
               "name": "debug",
-              "path": "/nix/store/4qnj6h95q6akmag8risjilrw5h7vxw8y-postgresql-15.7-debug"
+              "path": "/nix/store/b8wkfla6d8nvmh45xqnyn0b85aqa4rdw-postgresql-16.3-debug"
             },
             {
               "name": "doc",
-              "path": "/nix/store/bwfx3pfc2s5hjwjzq581i0f70y7fbs8s-postgresql-15.7-doc"
-            },
-            {
-              "name": "lib",
-              "path": "/nix/store/3hd8s5jhwqcxz8h8i57w8n7ka85k4g4x-postgresql-15.7-lib"
+              "path": "/nix/store/yw7w153fgzl58xq8ynhx7ylzcv5qdla0-postgresql-16.3-doc"
             }
           ],
-          "store_path": "/nix/store/y20f3ng0g3qyvxdnrh6pj05a9gg1vhzc-postgresql-15.7"
+          "store_path": "/nix/store/hpgi211gzb0cp9m78pnga6lyrzb8v50b-postgresql-16.3"
+        }
+      }
+    },
+    "procps@latest": {
+      "last_modified": "2024-07-07T16:08:25Z",
+      "resolved": "github:NixOS/nixpkgs/ab82a9612aa45284d4adf69ee81871a389669a9e#procps",
+      "source": "devbox-search",
+      "version": "3.3.17",
+      "systems": {
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/rss6ydirf7ifh6rnxrfxzw7ix5iiplqb-procps-3.3.17",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/rss6ydirf7ifh6rnxrfxzw7ix5iiplqb-procps-3.3.17"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/dlkwks6y7s6w5dghzw250rh2d97cpkrf-procps-3.3.17",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/dlkwks6y7s6w5dghzw250rh2d97cpkrf-procps-3.3.17"
         }
       }
     },

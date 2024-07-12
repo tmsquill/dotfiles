@@ -26,9 +26,12 @@
     "tmux@latest",
     "podman@latest",
     "neovim@latest",
-    "postgresql@latest",
     "icdiff@latest",
-    "istioctl@latest"
+    "istioctl@latest",
+    "procps@latest",
+    "cilium-cli@latest",
+    "hubble@latest",
+    "postgresql_16@latest"
   ],
   "shell": {
     "init_hook": [
