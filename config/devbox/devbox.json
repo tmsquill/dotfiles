@@ -3,11 +3,9 @@
   "packages": [
     "gdal@latest",
     "restic@latest",
-    "kcl-cli@latest",
     "pmtiles@latest",
     "k9s@latest",
     "stern@latest",
-    "tree@latest",
     "kind@latest",
     "jq@latest",
     "eza@latest",
@@ -17,21 +15,22 @@
     "fzf@latest",
     "starship@latest",
     "htop@latest",
-    "teller@latest",
     "opentofu@latest",
     "ansible@latest",
     "kubernetes-helm@latest",
     "kustomize@latest",
     "kubectl@latest",
     "tmux@latest",
-    "podman@latest",
     "neovim@latest",
     "icdiff@latest",
     "istioctl@latest",
-    "procps@latest",
     "cilium-cli@latest",
     "hubble@latest",
-    "postgresql_16@latest"
+    "tippecanoe@latest",
+    "fish@latest",
+    "postgresql_16@latest",
+    "macmon@latest",
+    "rclone@latest"
   ],
   "shell": {
     "init_hook": [

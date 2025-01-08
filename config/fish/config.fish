@@ -2,7 +2,7 @@
 set -gx EDITOR nvim
 
 # Update $PATH Variable
-set PATH /opt/homebrew/bin $HOME/.local/share/devbox/global/default/.devbox/nix/profile/default/bin $PATH
+set PATH $HOME/.local/share/devbox/global/default/.devbox/nix/profile/default/bin $HOME/go/bin $PATH
 
 # Disable Greeting Message
 set fish_greeting
