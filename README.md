@@ -5,13 +5,9 @@ A must-have collection of fantastic open-source projects, all combined to make m
 _Consists of..._
 
 - [alacritty](https://github.com/alacritty/alacritty)
-- [fish](https://github.com/fish-shell/fish-shell)
-    - [fisher](https://github.com/jorgebucaran/fisher)
-    - [fzf.fish](https://github.com/PatrickF1/fzf.fish)
 - [fzf](https://github.com/junegunn/fzf)
 - [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
-- [neovim](https://github.com/neovim/neovim)
-    - [lazyvim](https://github.com/LazyVim/LazyVim)
+- [nushell](https://www.nushell.sh/)
 - [starship](https://github.com/starship/starship)
 - [tmux](https://github.com/tmux/tmux)
     - [tpm](https://github.com/tmux-plugins/tpm)
