@@ -8,7 +8,6 @@
     "stern@latest",
     "kind@latest",
     "jq@latest",
-    "eza@latest",
     "gh@latest",
     "bat@latest",
     "argo@latest",
@@ -21,16 +20,17 @@
     "kustomize@latest",
     "kubectl@latest",
     "tmux@latest",
-    "neovim@latest",
     "icdiff@latest",
     "istioctl@latest",
     "cilium-cli@latest",
     "hubble@latest",
     "tippecanoe@latest",
-    "fish@latest",
     "postgresql_16@latest",
     "macmon@latest",
-    "rclone@latest"
+    "rclone@latest",
+    "fabric-ai@latest",
+    "nushell@latest",
+    "helix@latest"
   ],
   "shell": {
     "init_hook": [

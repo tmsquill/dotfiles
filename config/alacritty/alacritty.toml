@@ -2,6 +2,7 @@ import = ["/Users/tmsquill/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
 
 [env]
 TERM = "xterm-256color"
+XDG_CONFIG_HOME = "/Users/tmsquill/.config"
 
 [font]
 size = 15.0
@@ -26,5 +27,7 @@ style = "Regular"
 history = 50000
 
 [shell]
-program = "/opt/homebrew/bin/fish"
-args = ["-l", "-c", "tmux attach || tmux"]
+program = "/Users/tmsquill/.local/share/devbox/global/default/.devbox/nix/profile/default/bin/nu"
+
+[window]
+startup_mode = "Maximized"
