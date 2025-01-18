@@ -15,6 +15,14 @@ _Consists of..._
     - [tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)
     - [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
 
+## Installation
+
+Currently has only been tested on macOS and Raspberry Pi OS. Steps to install:
+
+1. Download and install [devbox](https://github.com/jetify-com/devbox) by running their provided script.
+2. Establish symbolic links from `~/.config/<RELEVANT-DIRECTORIES>` to the `config` directory in this repository.
+3. Run `devbox global shellenv`
+
 ## Usage
 
 **NOTE:** Only supports Debian-based operating systems at the moment, my main use case is Raspberry Pis in my homelab.

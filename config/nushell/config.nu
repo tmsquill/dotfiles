@@ -25,4 +25,4 @@ alias k = kubectl
 
 $env.config.show_banner = false
 
-# TODO: devbox, fzf, starship
+# TODO: devbox, fzf

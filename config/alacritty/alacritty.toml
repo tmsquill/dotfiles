@@ -3,6 +3,7 @@ import = ["/Users/tmsquill/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
 [env]
 TERM = "xterm-256color"
 XDG_CONFIG_HOME = "/Users/tmsquill/.config"
+XDG_DATA_HOME = "/Users/tmsquill/.config"
 
 [font]
 size = 15.0
