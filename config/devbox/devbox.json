@@ -9,7 +9,6 @@
     "kind@latest",
     "jq@latest",
     "gh@latest",
-    "bat@latest",
     "argo@latest",
     "fzf@latest",
     "starship@latest",
@@ -30,7 +29,9 @@
     "rclone@latest",
     "fabric-ai@latest",
     "nushell@latest",
-    "helix@latest"
+    "helix@latest",
+    "yq@latest",
+    "zellij@latest"
   ],
   "shell": {
     "init_hook": [

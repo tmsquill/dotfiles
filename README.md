@@ -20,8 +20,21 @@ _Consists of..._
 Currently has only been tested on macOS and Raspberry Pi OS. Steps to install:
 
 1. Download and install [devbox](https://github.com/jetify-com/devbox) by running their provided script.
+
+`curl -fsSL https://get.jetify.com/devbox | bash`
+
 2. Establish symbolic links from `~/.config/<RELEVANT-DIRECTORIES>` to the `config` directory in this repository.
-3. Run `devbox global shellenv`
+
+```sh
+ln -s ~/.../dotfiles/config/devbox/devbox.json ~/.local/share/devbox/global/default/devbox.json
+ln -s ~/.../dotfiles/config/alacritty ~/.config/alacritty
+ln -s ~/.../dotfiles/config/helix ~/.config/helix
+ln -s ~/.../dotfiles/config/nushell ~/.config/nushell
+ln -s ~/.../dotfiles/config/starship/starship.toml ~/.config/starship.toml
+ln -s ~/.../dotfiles/config/zellij ~/.config/zellij
+```
+
+3. Run `devbox global install`
 
 ## Usage
 

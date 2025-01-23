@@ -17,7 +17,7 @@
 # You can remove these comments if you want or leave
 # them for future reference.
 
-$env.PATH ++= ["~/.local/share/devbox/global/default/.devbox/nix/profile/default/bin", "~/go/bin", "/usr/local/bin"]
+$env.PATH ++= ["/Users/tmsquill/.local/share/devbox/global/default/.devbox/nix/profile/default/bin", "/Users/tmsquill/go/bin", "/usr/local/bin"]
 
 $env.config.buffer_editor = "hx"
 
