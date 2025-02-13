@@ -33,7 +33,10 @@
     "zellij@latest",
     "ripgrep@latest",
     "sd@latest",
-    "fd@latest"
+    "fd@latest",
+    "trufflehog@latest",
+    "go@latest",
+    "go-migrate@latest"
   ],
   "shell": {
     "init_hook": [
