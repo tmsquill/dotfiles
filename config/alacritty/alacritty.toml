@@ -23,6 +23,11 @@ style = "Italic"
 family = "MesloLGL Nerd Font"
 style = "Regular"
 
+[keyboard]
+bindings = [
+  { key = "N", mods = "Command", action = "ReceiveChar" }
+]
+
 [scrolling]
 history = 50000
 

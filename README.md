@@ -26,7 +26,7 @@ Currently has only been tested on macOS and Raspberry Pi OS. Steps to install:
 2. Establish symbolic links from `~/.config/<RELEVANT-DIRECTORIES>` to the `config` directory in this repository.
 
 ```sh
-ln -s ~/.../dotfiles/config/devbox/devbox.json ~/.local/share/devbox/global/default/devbox.json
+ln -s ~/.../dotfiles/config/devbox/devbox.json ~/.config/devbox/global/default/devbox.json
 ln -s ~/.../dotfiles/config/alacritty ~/.config/alacritty
 ln -s ~/.../dotfiles/config/helix ~/.config/helix
 ln -s ~/.../dotfiles/config/nushell ~/.config/nushell
