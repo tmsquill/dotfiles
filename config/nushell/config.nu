@@ -17,13 +17,17 @@
 # You can remove these comments if you want or leave
 # them for future reference.
 
+const NU_PLUGIN_DIRS = [
+  ($nu.current-exe | path dirname)
+]
+
 $env.EDITOR = "hx"
+$env.config.buffer_editor = "hx"
+$env.config.show_banner = false
 $env.PATH ++= ["/Users/tmsquill/.config/devbox/global/default/.devbox/nix/profile/default/bin", "/Users/tmsquill/go/bin", "/usr/local/bin"]
 
 $env.config.buffer_editor = "hx"
 
 alias k = kubectl
 
-$env.config.show_banner = false
-
-# TODO: devbox, fzf
+source ~/.local/share/atuin/init.nu

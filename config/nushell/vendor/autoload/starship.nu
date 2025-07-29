@@ -5,7 +5,7 @@
 export-env { $env.STARSHIP_SHELL = "nu"; load-env {
     STARSHIP_SESSION_KEY: (random chars -l 16)
     PROMPT_MULTILINE_INDICATOR: (
-        ^/Users/tmsquill/.local/share/devbox/global/default/.devbox/nix/profile/default/bin/starship prompt --continuation
+        ^/Users/tmsquill/.config/devbox/global/default/.devbox/nix/profile/default/bin/starship prompt --continuation
     )
 
     # Does not play well with default character module.
@@ -15,7 +15,7 @@ export-env { $env.STARSHIP_SHELL = "nu"; load-env {
     PROMPT_COMMAND: {||
         # jobs are not supported
         (
-            ^/Users/tmsquill/.local/share/devbox/global/default/.devbox/nix/profile/default/bin/starship prompt
+            ^/Users/tmsquill/.config/devbox/global/default/.devbox/nix/profile/default/bin/starship prompt
                 --cmd-duration $env.CMD_DURATION_MS
                 $"--status=($env.LAST_EXIT_CODE)"
                 --terminal-width (term size).columns
@@ -28,7 +28,7 @@ export-env { $env.STARSHIP_SHELL = "nu"; load-env {
 
     PROMPT_COMMAND_RIGHT: {||
         (
-            ^/Users/tmsquill/.local/share/devbox/global/default/.devbox/nix/profile/default/bin/starship prompt
+            ^/Users/tmsquill/.config/devbox/global/default/.devbox/nix/profile/default/bin/starship prompt
                 --right
                 --cmd-duration $env.CMD_DURATION_MS
                 $"--status=($env.LAST_EXIT_CODE)"
