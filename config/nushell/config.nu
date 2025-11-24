@@ -26,7 +26,12 @@ $env.config.buffer_editor = "hx"
 $env.config.show_banner = false
 $env.PATH ++= ["/Users/tmsquill/.config/devbox/global/default/.devbox/nix/profile/default/bin", "/Users/tmsquill/go/bin", "/usr/local/bin"]
 
-$env.config.buffer_editor = "hx"
+# Import the Ascend Admin CLI
+use "/Users/tmsquill/Documents/Projects/platform/ascend-admin-cli/api.nu"
+use "/Users/tmsquill/Documents/Projects/platform/ascend-admin-cli/customer.nu"
+use "/Users/tmsquill/Documents/Projects/platform/ascend-admin-cli/database.nu"
+use "/Users/tmsquill/Documents/Projects/platform/ascend-admin-cli/user.nu"
+use "/Users/tmsquill/Documents/Projects/platform/ascend-admin-cli/workflow.nu"
 
 alias k = kubectl
 

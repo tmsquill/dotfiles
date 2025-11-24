@@ -15,10 +15,7 @@
     "kubectl@latest",
     "icdiff@latest",
     "istioctl@latest",
-    "cilium-cli@latest",
     "tippecanoe@latest",
-    "macmon@latest",
-    "rclone@latest",
     "helix@latest",
     "zellij@latest",
     "ripgrep@latest",
@@ -30,13 +27,13 @@
     "yazi@latest",
     "ruff@latest",
     "yaml-language-server@latest",
-    "nodejs@latest",
     "atuin@latest",
     "postgresql_17@latest",
-    "ctop@latest",
     "nushellPlugins.polars@latest",
-    "duckdb@latest",
-    "nushell@0.104.0"
+    "nushell@latest",
+    "buf@latest",
+    "just@latest",
+    "gopls@latest"
   ],
   "shell": {
     "init_hook": [

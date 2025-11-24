@@ -42,6 +42,14 @@ ln -s ~/.../dotfiles/config/zellij ~/.config/zellij
 
 4. Run `devbox global install`
 
+5. Update `/etc/shells`
+
+Add `/Users/tmsquill/.local/share/devbox/global/default/.devbox/nix/profile/default/bin/nu` to `/etc/shells`.
+
+6. Change Shell
+
+`chsh -s /Users/tmsquill/.local/share/devbox/global/default/.devbox/nix/profile/default/bin/nu`
+
 ## Usage
 
 **NOTE:** Only supports Debian-based operating systems at the moment, my main use case is Raspberry Pis in my homelab.

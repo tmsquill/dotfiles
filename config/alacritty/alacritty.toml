@@ -32,7 +32,7 @@ bindings = [
 history = 50000
 
 [terminal.shell]
-program = "/Users/tmsquill/.local/share/devbox/global/default/.devbox/nix/profile/default/bin/nu"
+program = "/Users/tmsquill/.config/devbox/global/default/.devbox/nix/profile/default/bin/nu"
 
 [window]
 option_as_alt = "Both"
